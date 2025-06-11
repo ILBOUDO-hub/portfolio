@@ -157,6 +157,55 @@
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
         }
 
+        /*Code pour les experiences professionnelles*/
+        .timeline {
+            position: relative;
+            margin-left: 20px;
+            margin-right: 20px;
+            padding-left: 30px;
+            border-left: 3px solid #d1d5db;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 50px;
+        }
+
+        .timeline-icon {
+            position: absolute;
+            left: -45px;
+            top: 5px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-size: 16px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .timeline-content {
+            padding: 25px;
+            border-radius: 12px;
+            background-color: #ffffff;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+        }
+
+
+        /*Education*/
+        #Education .card-custom {
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+            transition: transform 0.3s ease;
+        }
+
+        .card-custom:hover {
+            transform: translateY(-5px);
+        }
+
+
+
         /* Skills */
         .skill-item {
             text-align: center;
@@ -171,7 +220,19 @@
             display: flex;
             align-items: center;
             justify-content: center;
-          
+            margin: 0 auto 20px;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .skill-icons {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             font-size: 2rem;
             color: white;
         }
