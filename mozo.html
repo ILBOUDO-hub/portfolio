@@ -1,20 +1,18 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projet – Marketing Analytics</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Project – Mortgage Loan Simulator</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body {
             font-family: 'Segoe UI', sans-serif;
-            margin: 0;
-            padding: 0;
             background-color: #f8f9fa;
             color: #1e293b;
+            line-height: 1.6;
         }
 
         a {
@@ -22,39 +20,42 @@
         }
 
         .hero {
-            background: linear-gradient(135deg, #2563eb, #1e40af);
+            background: linear-gradient(135deg, #667eea, #764ba2);
             color: white;
             padding: 80px 20px;
             text-align: center;
         }
 
-        .hero .btn-primary-custom {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 12px 24px;
-            background: white;
+        .hero h1 {
+            font-size: 2.8rem;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 20px;
+        }
+
+        .btn-primary-custom {
+            background-color: white;
             color: #2563eb;
-            font-weight: bold;
             border-radius: 50px;
+            padding: 10px 24px;
+            font-weight: bold;
             transition: all 0.3s ease;
         }
 
-        .hero .btn-primary-custom:hover {
-            background: #f0f0f0;
+        .btn-primary-custom:hover {
+            background-color: #f0f0f0;
         }
 
         .section {
             padding: 60px 20px;
         }
 
-        .section-title {
-            margin-bottom: 40px;
-        }
-
         .section-title h2 {
             font-size: 2rem;
-            margin-bottom: 10px;
             text-align: center;
+            margin-bottom: 10px;
         }
 
         .section-title p {
@@ -64,118 +65,128 @@
 
         .container {
             max-width: 1140px;
-            margin: 0 auto;
+            margin: auto;
         }
 
         .card-custom {
             background: white;
             padding: 30px;
             border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
             margin-bottom: 30px;
+        }
+
+        .illustration-img {
+            border-radius: 12px;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
         }
 
         footer {
             background: #1e293b;
             color: white;
             text-align: center;
-            padding: 30px 10px;
-            margin-top: 40px;
-        }
-
-
-        .illustration-img {
-            border-radius: 12px;
-            width: 100%;
-            object-fit: cover;
+            padding: 25px 10px;
         }
     </style>
 </head>
 
 <body>
-    <section class="section bg-light">
-        <div class="container">
-            <div class="section-title text-center">
-                <h2>Objectif du Projet</h2>
-                <p> Analyse et visualisation des données de ventes de Mozo Hunt</p>
+    <header class="hero">
+        <h1>Sales dashboard</h1>
+        <p>Interactive data visualization project using Power BI & Excel</p>
+        <a href="index.html" class="btn btn-primary-custom">← Back to Projects</a>
+    </header>
+
+    <body>
+        <section class="section bg-light">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h2>Project Objective</h2>
+                    <p>Sales data analysis and visualization for Mozo Hunt</p>
+                </div>
+
+                <div class="card-custom p-4 mb-5">
+                    <img src="img/hunt.png" alt="" class="illustration-img mt-2">
+                </div>
+
+                <div class="p-4 mb-5">
+                    <p style="text-align: justify;">
+                        This project allowed me to leverage Power BI not only for data analysis but also to design
+                        user-focused interactive interfaces. I explored how to integrate complex business logic into a
+                        BI
+                        tool while ensuring usability and visual impact.
+                    </p>
+                </div>
+
+                <div class="card-custom p-4 mb-5">
+                    <h4>1. Data Collection & Cleaning</h4>
+                    <p>
+                        The data was collected from the sales system and exported to Excel. Cleaning included handling
+                        missing values, standardizing date formats, and validating payment methods.
+                    </p>
+                </div>
+
+                <div class="card-custom p-4 mb-5">
+                    <h4>2. Data Modeling</h4>
+                    <p>
+                        With Power Query, the data was transformed into a suitable model: separated tables for orders,
+                        customers, and payments with proper relationships defined.
+                    </p>
+                </div>
+
+                <div class="card-custom p-4 mb-5">
+                    <h4>3. KPIs & Metrics</h4>
+                    <p>
+                        Key Performance Indicators (KPIs) such as <strong>Total Customers</strong>, <strong>Total
+                            Orders</strong>, <strong>Revenue</strong>, and <strong>Units Sold</strong> were computed
+                        using
+                        DAX.
+                    </p>
+                </div>
+
+                <div class="card-custom p-4 mb-5">
+                    <h4>4. Data Visualization</h4>
+                    <p>
+                        A responsive dashboard was built in Power BI including donut charts (subscriptions), funnel
+                        charts
+                        (payment methods), and a time series bar chart for monthly revenue.
+                    </p>
+                    <img src="img/report.png" alt="Dashboard Illustration" class="img-fluid">
+                </div>
+
+                <div class="card-custom p-4 mb-5">
+                    <h4>5. <i class="fas fa-trophy me-2 text-warning"></i>Insights & Business Value</h4>
+                    <p>
+                        The dashboard revealed Google Pay as the most preferred payment method and April 2024 as the
+                        peak
+                        revenue month. Such insights can drive marketing and operational decisions.
+                    </p>
+                </div>
+
+                <div class="card-custom p-4 mb-5">
+                    <h2 class="section-title"> 🛠️ Tools Used</h2>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">✔️ Microsoft Excel</li>
+                        <li class="list-group-item">✔️ Power BI</li>
+                        <li class="list-group-item">✔️ Power Query</li>
+                        <li class="list-group-item">✔️ DAX for measures and KPIs</li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="card-custom p-4 mb-5">
-                <img src="hunt.png" alt="" class="illustration-img mt-2">
+            <div class="text-center mt-5">
+                <a href="index.html" class="btn btn-outline-secondary btn-lg ms-3">← Back to Portfolio</a>
             </div>
-
-            <div class="p-4 mb-5">
-                <p style="text-align: justify;">
-                    Ce projet m’a permis de tirer parti de Power BI non seulement pour l’analyse de données, mais
-                    également pour concevoir des
-                    interfaces interactives orientées utilisateur. J’ai exploré comment intégrer de la logique métier
-                    complexe dans un outil BI,
-                    tout en veillant à l’ergonomie et à l’impact visuel.
-                </p>
             </div>
+        </section>
 
-            <div class="card-custom p-4 mb-5">
-                <h4>1. Data Collection & Cleaning</h4>
-                <p>
-                    The data was collected from the sales system and exported to Excel. Cleaning included handling
-                    missing values, standardizing date formats, and validating payment methods.
-                </p>
-            </div>
+        <footer style="background: linear-gradient(135deg, #667eea, #764ba2);">
+            <p>&copy; 2025 Auguste Ilboudo</p>
+        </footer>
 
-            <div class="card-custom p-4 mb-5">
-                <h4>2. Data Modeling</h4>
-                <p>
-                    With Power Query, the data was transformed into a suitable model: separated tables for orders,
-                    customers, and payments with proper relationships defined.
-                </p>
-            </div>
-            <div class="card-custom p-4 mb-5">
-                <h4>3. KPIs & Metrics</h4>
-                <p>
-                    Key Performance Indicators (KPIs) such as <strong>Total Customers</strong>, <strong>Total
-                        Orders</strong>, <strong>Revenue</strong>, and <strong>Units Sold</strong> were computed using
-                    DAX.
-                </p>
-            </div>
-            <div class="card-custom p-4 mb-5">
-                <h4>4. Data Visualization</h4>
-                <p>
-                    A responsive dashboard was built in Power BI including donut charts (subscriptions), funnel charts
-                    (payment methods), and a time series bar chart for monthly revenue.
-                </p>
-                <img src="report.png" alt="Dashboard Illustration" class="img-fluid">
-            </div>
-            <div class="card-custom p-4 mb-5">
-                <h4>5. <i class="fas fa-trophy me-2 text-warning"></i>Insights & Business Value</h4>
-                <p>
-                    The dashboard revealed Google Pay as the most preferred payment method and April 2024 as the peak
-                    revenue month. Such insights can drive marketing and operational decisions.
-                </p>
-            </div>
-
-            <div class="card-custom p-4 mb-5">
-                <h2 class="section-title"> 🛠️ Tools Used</h2>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">✔️ Microsoft Excel</li>
-                    <li class="list-group-item">✔️ Power BI</li>
-                    <li class="list-group-item">✔️ Power Query</li>
-                    <li class="list-group-item">✔️ DAX for measures and KPIs</li>
-                </ul>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="text-center my-5">
-        <a href="#" class="btn btn-primary btn-lg">Voir le code sur GitHub</a>
-        <a href="index.html" class="btn btn-outline-secondary btn-lg ms-3">Retour au portfolio</a>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Auguste Ilboudo</p>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
 
 </html>

@@ -10,6 +10,56 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main-style.css">
     <link rel="stylesheet" href="banniere-style.css">
+
+
+    <style>
+        /*Code pour les experiences professionnelles*/
+        .timeline {
+            position: relative;
+            margin-left: 50px;
+            margin-right: 50px;
+            padding-left: 30px;
+            border-left: 3px solid #d1d5db;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 50px;
+        }
+
+        .timeline-icon {
+            position: absolute;
+            left: -45px;
+            top: 5px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-size: 16px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .timeline-content {
+            padding: 25px;
+            border-radius: 12px;
+            background-color: #ffffff;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+        }
+
+
+        /*Education*/
+        #Education .card-custom {
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+            transition: transform 0.3s ease;
+        }
+
+        .card-custom:hover {
+            transform: translateY(-5px);
+        }
+    </style>
 </head>
 
 <!-- Section Accueil -->
@@ -17,9 +67,12 @@
     <div class="overlay">
         <div class="hero-content">
             <br> <br> <br> <br> <br>
-            <h2>Bonjour, je suis Auguste Ilboudo</h2>
-            <p class="subtitle">Business Analyst passionné par les données, la stratégie et l'innovation.</p>
-            <a href="#about" class="btn-primary-custom">En savoir plus</a>
+            <h3> Hello, I'm Auguste Ilboudo</h3>
+            <p class="subtitle">Business Analyst with a passion for data, strategy and innovation.</p>
+            <a href="#about" class="btn-primary-custom">Read more</a>
+            <a href="CV_AUGUSTE.pdf" download class="btn-primary-custom">
+                <i class="fas fa-file-download me-2"></i> Download My CV
+            </a>
         </div>
     </div>
 </header>
@@ -34,44 +87,38 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#education">Éducation</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about"> About us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-
     <!-- About Section -->
     <section id="about" class="section">
         <div class="container">
             <div class="section-title text-center mb-5">
-                <h2>À propos de moi</h2>
-                <p>Découvrez mon parcours et ma passion pour l'analyse de données</p>
+                <h3>About Me</h3>
+                <p>Discover my background and passion for data analysis</p>
             </div>
-
             <div class="row align-items-center">
-                <!-- Image à gauche -->
                 <div class="col-md-4 text-center mb-4 mb-md-0">
-                    <img src="img/graduation.jpg" class="img-fluid rounded shadow" alt="Photo de profil"
+                    <img src="img/graduation.jpg" class="img-fluid rounded shadow" alt="Profile Photo"
                         style="max-height: 450px;">
                 </div>
-
-                <!-- Texte à droite -->
                 <div class="col-md-8">
                     <div class="card-custom p-4">
                         <div class="row justify-content-center text-justify">
                             <div class="col-lg-10">
                                 <p style="text-align: justify;">
-                                    Titulaire d’une licence en <strong>Informatique</strong> et d’un <strong>MBA en
-                                        Business
-                                        Analytics</strong>,
-                                    je me situe à l’intersection entre la technologie et la stratégie d’entreprise.
-                                    Mon objectif : transformer les données en décisions à forte valeur ajoutée.
+                                    Holder of a degree in <strong>Computer Science</strong> and an <strong>MBA in
+                                        Business Analytics</strong>,
+                                    I work at the intersection of technology and business strategy.
+                                    My goal is to transform data into high value-added decisions.
                                 </p>
                             </div>
                         </div>
@@ -79,20 +126,19 @@
                         <div class="row justify-content-center text-justify">
                             <div class="col-lg-10">
                                 <p class="mb-3">
-                                    Grâce à mes expériences chez <strong>SAP SE</strong> et <strong>Mozo Hunt
-                                        Pvt</strong>,
-                                    j’ai développé une solide expertise dans :
+                                    Thanks to my experience with <strong>SAP SE</strong> and <strong>Mozo Hunt
+                                        Pvt</strong>, I have developed strong expertise in:
                                 </p>
                                 <ul class="list-unstyled text-muted">
-                                    <li>✔️ Analyse de la <strong>chaîne d’approvisionnement</strong></li>
-                                    <li>✔️ <strong>Segmentation de marché</strong> basée sur les données</li>
-                                    <li>✔️ Création de <strong>tableaux de bord interactifs</strong> avec Power BI</li>
-                                    <li>✔️ <strong>Automatisation des processus décisionnels</strong></li>
+                                    <li>✔️ <strong>Supply chain analysis</strong></li>
+                                    <li>✔️ <strong>Data-driven market segmentation</strong></li>
+                                    <li>✔️ <strong>Interactive dashboard creation</strong> with Power BI</li>
+                                    <li>✔️ <strong>Automation of decision-making processes</strong></li>
                                 </ul>
                                 <br>
                                 <p class="mt-4">
-                                    Passionné par la valorisation des données, je conçois des solutions claires,
-                                    impactantes et adaptées aux enjeux des PME et grandes entreprises.
+                                    Passionate about data valorization, I design clear, impactful, and business-oriented
+                                    solutions adapted to SMEs and large companies.
                                 </p>
                             </div>
                         </div>
@@ -101,58 +147,126 @@
             </div>
         </div>
     </section>
-
-
-
 
     <!-- Education Section -->
     <section id="education" class="section bg-light">
         <div class="container">
-            <div class="section-title fade-in">
-                <h2>Formation</h2>
-                <p>Mon parcours académique et professionnel</p>
+            <div class="section-title text-center mb-5 fade-in">
+                <h3>Education</h3>
+                <p>My academic and professional background</p>
             </div>
-            <div class="row">
-                <div class="col-lg-6 mb-4 fade-in">
-                    <div class="card-custom p-4">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="skill-icon me-3" style="width: 60px; height: 60px; font-size: 1.5rem;">
+
+            <div class="row justify-content-center align-items-stretch">
+                <div class="col-md-6 col-lg-5 mb-4 d-flex">
+                    <div class="card-custom p-4 w-100 d-flex flex-column justify-content-between text-start">
+                        <div class="d-flex align-items-start mb-3">
+
+                            <div class="skill-icon me-3">
                                 <i class="fas fa-graduation-cap"></i>
                             </div>
                             <div>
-                                <h5 class="mb-1">MBA - Business Analytics</h5>
-                                <p class="text-muted mb-0">Marwadi University (2023-2025)</p>
+                                <h5 class="mb-1 fw-bold">MBA - Business Analytics</h5>
+                                <p class="text-muted mb-0">Marwadi University<br><small>(2023 – 2025)</small></p>
                             </div>
                         </div>
-                        <p>Spécialisation en analyse de données, intelligence d'affaires et prise de décision
-                            stratégique basée sur les données.</p>
+                        <p class="text-muted">
+                            Focused on data analysis, business intelligence, and strategic decision-making through
+                            analytics.
+                        </p>
                     </div>
                 </div>
 
-                <div class="col-lg-6 mb-4 fade-in">
-                    <div class="card-custom p-4">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="skill-icon me-3" style="width: 60px; height: 60px; font-size: 1.5rem;">
+                <div class="col-md-6 col-lg-5 mb-4 d-flex">
+                    <div class="card-custom p-4 w-100 d-flex flex-column justify-content-between text-start">
+                        <div class="d-flex align-items-start mb-3">
+                            <div class="skill-icon me-3">
                                 <i class="fas fa-laptop-code"></i>
                             </div>
                             <div>
-                                <h5 class="mb-1">Licence en Informatique</h5>
-                                <p class="text-muted mb-0">Burkina Institute of Technology (2020-2023)</p>
+                                <h5 class="mb-1 fw-bold">Bachelor in Computer Science</h5>
+                                <p class="text-muted mb-0">Burkina Institute of Technology<br><small>(2020 –
+                                        2023)</small></p>
                             </div>
                         </div>
-                        <p>Formation solide en programmation, bases de données et développement d'applications.</p>
+                        <p class="text-muted">
+                            Solid foundation in programming, databases, software development, and systems architecture.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Work Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h3>Work Experience</h3>
+                <p>Professional background in business analysis and data strategy</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon bg-primary text-white">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content card-custom">
+                        <h5 class="mb-1">Business Analyst Intern – Mozo Hunt Pvt (India)</h5>
+                        <small class="text-muted">July 2024 – Sept 2024</small>
+                        <ul class="mt-2 mb-0">
+                            <li> Creation of Power BI dashboards for tracking sales, conversion rates and customer
+                                acquisition.</li>
+                            <li> Recommendations based on data analysis led to +12% increase in conversion rate in 2
+                                months.</li>
+                            <li> Implementation of dynamic segmentation to improve marketing targeting in India.</li>
+                            <li> Direct contribution to sales optimization strategy through real-time data visualization.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon bg-warning text-white">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="timeline-content card-custom">
+                        <h5 class="mb-1">Marketing Manager – Futurix LLC (Burkina Faso)</h5>
+                        <small class="text-muted">October 2022 – March 2024</small>
+                        <ul class="mt-2 mb-0">
+                            <li> Supervision of digital marketing and prospecting activities. </li>
+                            <li>Liaise with over 8 partners , coordinate more than 20 cultural events and + 1000
+                                tickets sold.</li>
+                            <li> Planning and executing growth-focused campaigns.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon bg-success text-white">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="timeline-content card-custom">
+                        <h5 class="mb-1">Supply Chain Development Intern – SAP SE (Germany)</h5>
+                        <small class="text-muted">September 2022 - November 2022</small>
+                        <ul class="mt-2 mb-0">
+                            <li>Worked on digital product innovation (remote).</li>
+                            <li>Analyzed enterprise architecture and business flows.</li>
+                            <li>Collaborated with SAP developers via BIT University.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
     <!-- Skills Section -->
     <section id="skills" class="section">
         <div class="container">
             <div class="section-title fade-in">
-                <h2>Compétences</h2>
-                <p>Mes expertises techniques et analytiques</p>
+                <h3>Skills</h3>
+                <p>My technical and analytical expertise</p>
             </div>
             <div class="row">
                 <div class="col-lg-3 col-md-6 mb-4 fade-in">
@@ -161,7 +275,7 @@
                             <i class="fas fa-chart-line"></i>
                         </div>
                         <h5>Power BI & Tableau</h5>
-                        <p>Création de tableaux de bord interactifs et visualisations de données avancées</p>
+                        <p>Building interactive dashboards and advanced data visualizations</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4 fade-in">
@@ -170,7 +284,7 @@
                             <i class="fas fa-database"></i>
                         </div>
                         <h5>SQL & Python</h5>
-                        <p>Analyse de données, requêtes complexes et automatisation des processus</p>
+                        <p>Data analysis, complex queries, and process automation</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4 fade-in">
@@ -179,7 +293,7 @@
                             <i class="fas fa-search"></i>
                         </div>
                         <h5>Market Research</h5>
-                        <p>Segmentation marché, profiling client et études de marché approfondies</p>
+                        <p>Market segmentation, customer profiling, and in-depth market studies</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4 fade-in">
@@ -188,14 +302,14 @@
                             <i class="fas fa-cogs"></i>
                         </div>
                         <h5>Process Analysis</h5>
-                        <p>Optimisation des processus métier et identification des risques</p>
+                        <p>Business process optimization and risk identification</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Bande citation sur la data -->
+    <!-- Quote Banner -->
     <div class="bg-primary text-white text-center py-5 px-3"
         style="background: linear-gradient(135deg, #667eea, #764ba2);">
         <div class="container">
@@ -204,12 +318,14 @@
         </div>
     </div>
 
+
+
     <!-- Services Section -->
     <section id="services" class="section bg-light">
         <div class="container">
             <div class="section-title fade-in">
-                <h2>Services</h2>
-                <p>Comment je peux vous aider à transformer vos données en avantage concurrentiel</p>
+                <h3>Services</h3>
+                <p>How I can help you turn your data into a competitive advantage</p>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-4 fade-in">
@@ -217,9 +333,9 @@
                         <div class="service-icon">
                             <i class="fas fa-chart-bar"></i>
                         </div>
-                        <h4>Visualisation de Données</h4>
-                        <p>Création de tableaux de bord interactifs Power BI et Tableau pour transformer vos données en
-                            insights visuels percutants.</p>
+                        <h4>Data Visualization</h4>
+                        <p>Design of interactive dashboards with Power BI and Tableau to transform your data into
+                            impactful visual insights.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 fade-in">
@@ -227,9 +343,9 @@
                         <div class="service-icon">
                             <i class="fas fa-bullseye"></i>
                         </div>
-                        <h4>Analyse de Marché</h4>
-                        <p>Segmentation client, études de marché et analyse concurrentielle pour optimiser vos
-                            stratégies marketing.</p>
+                        <h4>Market Analysis</h4>
+                        <p>Customer segmentation, market studies, and competitive analysis to optimize your marketing
+                            strategies.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 fade-in">
@@ -237,51 +353,37 @@
                         <div class="service-icon">
                             <i class="fas fa-project-diagram"></i>
                         </div>
-                        <h4>Optimisation de Processus</h4>
-                        <p>Analyse et amélioration des processus métier pour augmenter l'efficacité et réduire les
-                            coûts.</p>
+                        <h4>Process Optimization</h4>
+                        <p>Analysis and improvement of business processes to increase efficiency and reduce costs.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-
     <!-- Projects Section -->
     <section id="projects" class="section projects">
         <div class="container">
             <div class="section-title fade-in">
-                <h2>Projets Réalisés</h2>
+                <h3>Completed Projects</h3>
             </div>
             <div class="row">
-
                 <div class="col-lg-4 col-md-6 mb-4">
                     <a href="projet.html" style="text-decoration: none; color: black;">
                         <div class="project-card fade-in">
                             <div class="project-img">
-
-                                <div class="project-img">
-                                    <div>
-                                        <img src="img/scraping.png" alt="" style="width: 516px; height: 312px;">
-                                    </div>
+                                <div>
+                                    <img src="img/scraping.png" alt="" style="width: 516px; height: 312px;">
                                 </div>
-
                             </div>
                             <div class="project-content">
                                 <h4>Web Scraping</h4>
-                                <p>Mise en place d'un système de web scraping pour la collecte et analyse de données.
-                                </p>
-
+                                <p>Implementation of a web scraping system for data collection and analysis.</p>
                                 <div class="mt-3">
-
                                     <span class="badge bg-primary me-2">Excel VBA</span>
                                     <span class="badge bg-secondary me-2">Power Query</span>
                                     <span class="badge bg-success">DAX</span>
                                 </div>
-
-                                <!--
-                            <a href="#about" class="btn-primary-custom"
-                                style="background: linear-gradient(135deg, #667eea, #764ba2);">En savoir plus</a> -->
                             </div>
                         </div>
                     </a>
@@ -290,21 +392,17 @@
                     <a href="https://futurix.xyz/index.html" style="text-decoration: none; color: black;">
                         <div class="project-card fade-in">
                             <div class="project-img">
-
-                                <div class="project-img">
-                                    <div>
-                                        <img src="img/futurix.png" alt="" style="width: 516px; height: 312px;">
-                                    </div>
+                                <div>
+                                    <img src="img/futurix.png" alt="" style="width: 516px; height: 312px;">
                                 </div>
-
                             </div>
                             <div class="project-content">
                                 <h4>Futurix LLC</h4>
-                                <p>Conception et développement du site web de l'entreprise Futurix Sarl basée au Burkina
-                                    Faso.</p>
+                                <p>Design and development of the official website of Futurix Sarl based in Burkina Faso.
+                                </p>
                                 <div class="mt-3">
                                     <span class="badge bg-primary me-2">Bootstrap</span>
-                                    <span class="badge bg-secondary me-2">Html , Css , Js</span>
+                                    <span class="badge bg-secondary me-2">HTML, CSS, JS</span>
                                     <span class="badge bg-success">SQL Server</span>
                                 </div>
                             </div>
@@ -315,23 +413,18 @@
                     <a href="simulateur.html" style="text-decoration: none; color: black;">
                         <div class="project-card fade-in">
                             <div class="project-img">
-
-                                <div class="project-img">
-                                    <div>
-                                        <img src="img/immo.png" alt="" style="width: 516px; height: 312px;">
-                                    </div>
+                                <div>
+                                    <img src="img/immo.png" alt="" style="width: 516px; height: 312px;">
                                 </div>
-
                             </div>
                             <div class="project-content">
-                                <h4> Simulateur de crédit immobilier</h4>
-                                <p>Développement d'un simulateur de crédit immobilier intéractif en temps
-                                    réel, utilisée par les opérateurs économiques.
+                                <h4>Mortgage Loan Simulator</h4>
+                                <p>Development of a real-time interactive mortgage simulator used by business operators.
                                 </p>
                                 <div class="mt-3">
                                     <span class="badge bg-primary me-2">Power BI</span>
                                     <span class="badge bg-secondary me-2">Microsoft Excel</span>
-                                    <span class="badge bg-success"> Power Query</span>
+                                    <span class="badge bg-success">Power Query</span>
                                 </div>
                             </div>
                         </div>
@@ -341,19 +434,14 @@
                     <a href="mozo.html" style="text-decoration: none; color: black;">
                         <div class="project-card fade-in">
                             <div class="project-img">
-
-                                <div class="project-img">
-                                    <div>
-                                        <img src="img/report.png" alt="" style="width: 516px; height: 312px;">
-                                    </div>
+                                <div>
+                                    <img src="img/report.png" alt="" style="width: 516px; height: 312px;">
                                 </div>
-
                             </div>
                             <div class="project-content">
-                                <h4>Dashboard chez MOZO HUNT</h4>
-                                <p>Création d'un tableau de bord interactif pour analyser les performances d'une
-                                    plateforme
-                                    éducative Mozo Hunt, augmentant les ventes de 25%.</p>
+                                <h4>Dashboard at MOZO HUNT</h4>
+                                <p>Creation of an interactive dashboard to analyze the performance of the Mozo Hunt
+                                    educational platform, increasing sales by 25%.</p>
                                 <div class="mt-3">
                                     <span class="badge bg-primary me-2">Power BI</span>
                                     <span class="badge bg-secondary me-2">SQL</span>
@@ -367,18 +455,14 @@
                     <a href="https://futurix.xyz/index.html" style="text-decoration: none; color: black;">
                         <div class="project-card fade-in">
                             <div class="project-img">
-
-                                <div class="project-img">
-                                    <div>
-                                        <img src="img/report.png" alt="" style="width: 516px; height: 312px;">
-                                    </div>
+                                <div>
+                                    <img src="img/report.png" alt="" style="width: 516px; height: 312px;">
                                 </div>
-
                             </div>
                             <div class="project-content">
                                 <h4>Data Warehouse Enterprise</h4>
-                                <p>Conception et implémentation d'un entrepôt de données pour une multinationale,
-                                    centralisant les données de 15 filiales.</p>
+                                <p>Design and implementation of a data warehouse for a multinational, centralizing data
+                                    from 15 subsidiaries.</p>
                                 <div class="mt-3">
                                     <span class="badge bg-primary me-2">ETL</span>
                                     <span class="badge bg-secondary me-2">SQL Server</span>
@@ -391,18 +475,15 @@
                 <div class="col-lg-4 col-md-6 mb-4">
                     <a href="projet.html" style="text-decoration: none; color: black;">
                         <div class="project-card fade-in">
-
                             <div class="project-img">
                                 <div>
                                     <img src="img/report.png" alt="">
                                 </div>
                             </div>
-
                             <div class="project-content">
-                                <h4>Prédiction Churn Client</h4>
-                                <p>Développement d'un modèle prédictif pour anticiper le départ des clients, permettant
-                                    de
-                                    réduire le taux de churn de 30%.</p>
+                                <h4>Customer Churn Prediction</h4>
+                                <p>Development of a predictive model to anticipate customer churn, reducing churn rate
+                                    by 30%.</p>
                                 <div class="mt-3">
                                     <span class="badge bg-primary me-2">Machine Learning</span>
                                     <span class="badge bg-secondary me-2">R</span>
@@ -416,46 +497,43 @@
         </div>
     </section>
 
-
     <!-- Contact Section -->
     <section id="contact" class="section bg-light">
         <div class="container">
             <div class="section-title fade-in">
-                <h2>Contactez-moi</h2>
-                <p>Discutons de vos projets d'analyse de données et d'intelligence d'affaires</p>
+                <h3>Contact Me</h3>
+                <p>Let's talk about your data analysis and business intelligence projects</p>
             </div>
-
-
             <div class="row justify-content-center">
                 <div class="col-auto">
                     <div class="d-flex gap-3">
-                        <a href="mozo.html" class="social-icon" style="text-decoration: none;"><i
-                                class="skill-icon me-3 fab fa-linkedin"
+                        <a href="https://www.linkedin.com/in/auguste-ilboudo" class="social-icon"
+                            style="text-decoration: none;"><i class="skill-icon me-3 fab fa-linkedin"
                                 style="width: 60px; height: 60px; font-size: 1.5rem;"></i></a>
-                        <a href="#" class="social-icon" style="text-decoration: none;"><i
+
+                        <a href="https://github.com/ILBOUDO-hub" class="social-icon" style="text-decoration: none;"><i
                                 class="skill-icon me-3 fab fa-github"
                                 style="width: 60px; height: 60px; font-size: 1.5rem;"></i></a>
-                        <a href="#" class="social-icon" style="text-decoration: none;"><i
-                                class="skill-icon me-3 fab fa-twitter"
-                                style="width: 60px; height: 60px; font-size: 1.5rem;"></i></a>
-                        <a href="#" class="social-icon" style="text-decoration: none;"><i
-                                class="skill-icon me-3 fas fa-envelope"
-                                style="width: 60px; height: 60px; font-size: 1.5rem;"></i></a>
+
+                        <a href="mailto:auguste.ilboudo12@gmail.com?subject=Demande%20de%20collaboration&body=Bonjour%20Auguste%2C%0A%0AJe%20viens%20de%20visiter%20votre%20portfolio%20et%20je%20souhaite%20en%20savoir%20plus%20sur%20vos%20compétences.%0A%0ACordialement%2C"
+                            class="social-icon" style="text-decoration: none;">
+                            <i class="skill-icon me-3 fas fa-envelope"
+                                style="width: 60px; height: 60px; font-size: 1.5rem;"></i>
+                        </a>
+
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
-
-
 
     <!-- Footer -->
     <footer style="background: linear-gradient(135deg, #667eea, #764ba2);">
         <div class="container">
-            <p>&copy; 2025 Auguste ILBOUDO. Tous droits réservés.</p>
+            <p>&copy; 2025 Auguste ILBOUDO. All rights reserved.</p>
         </div>
     </footer>
+
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
